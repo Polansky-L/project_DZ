@@ -5,4 +5,11 @@ num = random.randint(1,10)
 uzer_num = 0
 while uzer_num != num:
     uzer_num = int(input("введите число 1 - 10 "))
-    pptk+=
+    pptk+=1
+
+    if uzer_num > num:
+        print("перелет")
+    elif (uzer_num < num):
+        print("недолет")
+    else:
+        print(f"угадал! Число попыток - {pptk}")
